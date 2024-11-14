@@ -1,6 +1,7 @@
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  user-select: none;
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -305,4 +306,36 @@ button:focus-visible {
   100% {
     transform: rotate(360deg);
   }
+}
+.main{
+  width: 80vw;
+  max-width: 1000px;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  color: #242424;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 5px pink;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+margin: 1rem;
+
+}
+label{
+  cursor: pointer;
+}
+input{
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  margin: 0.5rem;
+background: #dff1fd;
+border: none;
 }
