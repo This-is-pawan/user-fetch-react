@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0 auto;
- box-sizing: border-box;
-  
+  box-sizing: border-box;
 }
- /* :root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,7 +14,6 @@
  } */
 
 a {
- 
   color: #646cff;
   text-decoration: none;
 }
@@ -49,24 +47,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
 
-.align{
+.align {
   width: 90vw;
- margin: 1rem auto;
+  margin: 1rem auto;
   align-items: center;
-
 }
-.align h1{
-margin-bottom: 1rem;
+.align h1 {
+  margin-bottom: 1rem;
 }
-.align span{
+.align span {
   padding: 10px;
   font-size: 1.3rem;
-  border:1px   solid blueviolet;
+  border: 1px solid blueviolet;
   border-radius: 5px;
   margin: 10px;
 }
-.main-poop{
-  
+.main-poop {
   width: 60vw;
   height: 70px;
   margin: 2rem auto;
@@ -75,7 +71,8 @@ margin-bottom: 1rem;
   color: #242424;
   font-weight: 600;
   letter-spacing: 2px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 4.5rem;
   text-align: center;
   text-transform: capitalize;
@@ -86,23 +83,28 @@ margin-bottom: 1rem;
   position: relative;
   transition: all 1s ease-out;
 }
-.main-poop{
-  
-  animation: main-poop 1s 1 ;
+.main-poop {
+  animation: main-poop 1s 1;
 }
-.empty{
+.empty {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   width: 100%;
   height: 6px;
   top: 98%;
-  background: linear-gradient(to right, rgb(206, 206, 93), green, rgb(137, 137, 209), rgb(32, 146, 174));
+  background: linear-gradient(
+    to right,
+    rgb(206, 206, 93),
+    green,
+    rgb(137, 137, 209),
+    rgb(32, 146, 174)
+  );
 
   transition: all 1s ease;
   animation: identifier 1.5s 1;
   position: absolute;
 }
-.fa-xmark{
+.fa-xmark {
   cursor: pointer;
   position: absolute;
   right: 0;
@@ -110,30 +112,28 @@ margin-bottom: 1rem;
 }
 
 @keyframes identifier {
-  0%{
+  0% {
     width: 100%;
   }
-  
-  100%{
+
+  100% {
     width: 0%;
   }
-  
 }
 @keyframes main-poop {
-  0%{
-   transform: translateX(100%);
+  0% {
+    transform: translateX(100%);
   }
-  
-  50%{
+
+  50% {
     transform: translateX(20px);
   }
 
-70%{
-  transform: translateX(-70px);
+  70% {
+    transform: translateX(-70px);
+  }
 }
-  
-}
-.card{
+.card {
   width: 70vw;
   height: auto;
   margin: 2rem auto;
@@ -141,88 +141,89 @@ margin-bottom: 1rem;
   box-shadow: 2px 2px 4px pink;
   padding: 10px;
 }
-.IMG{
+.IMG {
   width: 100%;
   transition: all 0.5s ease;
   background: transparent;
   object-fit: cover;
 }
-.card:hover .IMG{
+.card:hover .IMG {
   transform: rotateY(180deg);
 }
-.cardAlign h4{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.cardAlign h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   text-transform: capitalize;
 }
-.fa-star{
+.fa-star {
   color: gold;
   line-height: 2rem;
 }
-.overline p{
+.overline p {
   color: rgb(187, 204, 218);
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
-.overline{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.overline {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1px;
 }
-.item{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.item {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.cardAlign h5{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-letter-spacing: 1px;
-} 
-.pra{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.cardAlign h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
 }
-.topBtn{
+.pra {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.topBtn {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
-.fa-minus,.fa-plus,.one{
+.fa-minus,
+.fa-plus,
+.one {
   box-shadow: 2px 2px 5px pink;
   padding: 7px;
   margin: 3px;
   margin-bottom: 1rem;
- 
 }
-.underLine{
+.underLine {
   width: 90%;
   height: 1px;
-  margin:1rem  auto;
+  margin: 1rem auto;
   background: #242424;
 }
-.one{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.one {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
 }
-#select{
+#select {
   padding: 5px;
   margin-bottom: 1rem;
   border-radius: 5px;
   background: #666161;
   color: aliceblue;
 }
-.bottomBtn{
+.bottomBtn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btns{
+.btns {
   border: 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: #242424;
   color: white;
-font-size: 1.3rem;
-cursor: pointer;
- text-transform: capitalize;
-
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 /* .btns:hover{
   background: white;
@@ -233,28 +234,27 @@ cursor: pointer;
   padding: 5px;
   color: #666161;
 }
-@media screen and (min-width:900px) {
-  .main-poop{
+@media screen and (min-width: 900px) {
+  .main-poop {
     width: 400px;
   }
-  .IMG{
+  .IMG {
     width: 50%;
     object-fit: cover;
     margin: auto;
   }
-  .card{
+  .card {
     width: 500px;
     height: auto;
     margin: 2rem auto;
-    
   }
 }
-.lists{
+.lists {
   width: 90vw;
   max-width: 1000px;
   display: flex;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   text-transform: capitalize;
   margin: 2rem auto;
@@ -262,18 +262,16 @@ cursor: pointer;
   padding: 10px;
   border-radius: 5px;
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width: 900px) {
   .list {
- 
     display: grid;
-  grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
   }
 }
-.lists .btns a{
-
+.lists .btns a {
   padding: 5px 7px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: #242424;
   color: white;
   font-size: 1rem;
@@ -283,9 +281,28 @@ cursor: pointer;
   border-radius: 10px;
 }
 
-.lists img{
-width: 100px;
-height: 100px;
-border-radius: 50%;
-margin: 10px;
+.lists img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  margin-top: 1rem;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

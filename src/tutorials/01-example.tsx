@@ -1,36 +1,40 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
+const url = 'https://api.github.com/users/QuincyLarson';
 
 const Example = () => {
- const [value,newValue]=useState(0);
- // const [value2,newValue2]=useState(0);
-  useEffect(()=>{
-console.log('here');
+  const [value, setValue] = useState(null);
 
- },[value])
- // const Handle=()=>{
-  // newValue(value+1)
- //  setTimeout(() => {
-   // it will not work   newValue(value+1)
- //   newValue((current)=>{
- //    const newState=current+1;
- //    return newState;
- //   })
- //  }, 2000);
-  // newValue((current)=>{
-  //  const newState=current+1;
-  //  return newState;
-  // })
- // }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        setValue(data);
+        // console.log(data);
+        
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if (!value) {
+    return (
+      <div className="loader"></div>
+      
+    );
+  }
+  const { id, avatar_url, bio, company ,name} = value;
   return (
-   <>
-    <div>
-      <h4 style={{ textAlign: "center" , margin:'1rem' ,fontFamily:'sans-serif'}}>This is a counter:{value}</h4>
-      <div className="btns" style={{width:'100px',textAlign:'center'}} onClick={()=>{newValue(value+1)}}>click</div>
+    <div className="lists" key={id}>
+      <h2>{bio}</h2>
+      <p  style={{color:'blue'}}> <b>{name}</b></p>
+      <img src={avatar_url} alt="User Avatar" />
+      <span>{company}</span>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default Example
- 
+export default Example;

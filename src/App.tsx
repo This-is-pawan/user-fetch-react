@@ -1,13 +1,13 @@
 // import Heading from "./tutorials/heading"
-// import Example from "./tutorials/01-example"
-import User from "./usersrender"
+import Example from "./tutorials/01-example"
+// import User from "./usersrender"
 
 const App = () => {
   return (
     <div>
      {/* <Heading/> */}
-     {/* <Example/> */}
-     <User/>
+     <Example/>
+     {/* <User/> */}
     </div>
   )
 }
